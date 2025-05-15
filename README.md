@@ -1,21 +1,22 @@
-# COVID-19 Tracker
+# COVID-19 Global Data Tracker
 
-A web application that tracks and visualizes COVID-19 data across different regions, providing real-time statistics and insights about the pandemic.
+An interactive web application that tracks and visualizes COVID-19 data across different countries, providing real-time statistics and insights about the pandemic.
 
 ## Project Objectives
 
 - Display real-time COVID-19 statistics including cases, deaths, and recoveries
 - Provide interactive visualizations of COVID-19 data
-- Allow users to compare data across different regions
+- Allow users to compare data across different countries
 - Present data in an easily understandable format
 - Help users make informed decisions based on current pandemic statistics
 
 ## Tools and Libraries Used
 
-- React.js - Frontend framework
-- Chart.js - Data visualization
-- Axios - API requests
-- Material-UI - UI components
+- Python 3.x
+- Pandas - Data manipulation and analysis
+- Plotly - Interactive data visualization
+- Dash - Web application framework
+- Dash Bootstrap Components - UI components
 - Our World in Data COVID-19 Dataset - Primary data source
 
 ## Data Source
@@ -35,19 +36,34 @@ The dataset is regularly updated and includes data from multiple countries and r
 1. Clone the repository:
 ```bash
 git clone https://github.com/yourusername/covid-tracker.git
+cd covid-tracker
 ```
 
-2. Install dependencies:
+2. Create a virtual environment (recommended):
 ```bash
-npm install
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
 ```
 
-3. Start the development server:
+3. Install dependencies:
 ```bash
-npm start
+pip install -r requirements.txt
 ```
 
-4. Open your browser and navigate to `http://localhost:3000`
+4. Run the application:
+```bash
+python covid_tracker.py
+```
+
+5. Open your browser and navigate to `http://localhost:8050`
+
+## Features
+
+- Interactive country selection dropdown
+- Real-time COVID-19 case tracking
+- Death statistics visualization
+- Vaccination rate monitoring
+- Responsive and user-friendly interface
 
 ## Project Insights
 
